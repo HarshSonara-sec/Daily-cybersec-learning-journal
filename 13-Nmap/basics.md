@@ -23,13 +23,8 @@ OS detection.
 Scriptable interaction with the target service (Nmap Scripting Engine).
 
 ### The importance of enumeration: Why learning Nmap is just a starting point
-Enumeration is the art of information gathering so that we can identify all of the ways we could attack a target. Nmap is a tool we can use to enumerate this information, but we should always prioritize skills and methodology over tools.
-
-Port 443 is the standard and default TCP port used for HTTPS (Hypertext Transfer Protocol Secure) traffic
-
-In web-application terminology, a folder is commonly known as a directory
-
-The hash character (#) can be used to comment out the rest of a line in MySQL. 
+Enumeration is the art of information gathering so that we can identify all of the ways we could attack a target.
+Nmap is a tool we can use to enumerate this information.
 
 ### Important commands
 # Nmap Cheat Sheet
