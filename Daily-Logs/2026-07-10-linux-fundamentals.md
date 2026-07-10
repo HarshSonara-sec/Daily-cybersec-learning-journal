@@ -55,11 +55,30 @@ As of today, Network foundation on HTB CJCA Pathway is done with practical labs.
 Introduction to Networking is the new chapter that i started yesterday.
 today's topic covered is
 
-# Networking Structure
+### Networking Structure
 Network types
 Topologies
 Proxies
 
 (P.S. ->Find further details and notes in Networking Folder) 
 
+### Networking models 
+Learned about OSI model and its 7 layers alongside with TCP/IP model
+Topics:
+- OSI Model
+- TCP/IP
+- IPv4
+- Ping
+
+Difficulties:
+- Remembering all OSI layers.
+
+### HTB Machine
+- learned about Nmap and its most commonly used Commands
+- Check Nmap directory.
+- SQL injection basics and performed one on HTB Machine.
+
+### Jeremy's IT lab
+- YT tutorial for practical knowledge
+- performed lab of Networking in packet tracer by CISCO.
 
