@@ -1,15 +1,15 @@
 ### cheatsheet for Nmap command
 
-for target scanning ->
+```for target scanning ->
 nmap –sV –p 80 <target-ip>
 -sV enables service version detection
 -p 80 specifies that you’re scanning port 80 (HTTP).
 <target-ip> should be replaced with the IP address or hostname of the target system.
-
-###What is Nmap?
+```
+### What is Nmap?
 Network Mapper (Nmap) is an open-source network analysis and security auditing tool. It is designed to scan networks and identify which hosts are available on the network using raw packets, services, and applications. 
 
-###How to use Nmap
+### How to use Nmap
 Nmap can be divided into the following scanning techniques:
 
 Host discovery.
@@ -22,7 +22,7 @@ OS detection.
 
 Scriptable interaction with the target service (Nmap Scripting Engine).
 
-###The importance of enumeration: Why learning Nmap is just a starting point
+### The importance of enumeration: Why learning Nmap is just a starting point
 Enumeration is the art of information gathering so that we can identify all of the ways we could attack a target. Nmap is a tool we can use to enumerate this information, but we should always prioritize skills and methodology over tools.
 
 Port 443 is the standard and default TCP port used for HTTPS (Hypertext Transfer Protocol Secure) traffic
