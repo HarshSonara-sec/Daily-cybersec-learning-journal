@@ -33,3 +33,44 @@
 * Stay curious.
 * Practice more than you read.
 * Build understanding before speed.
+# Subnetting Mistakes Learned
+
+## Mistake 1
+
+Confused the given network address with the next subnet.
+
+### Fix
+
+If the problem already gives a network (for example, `192.168.50.0/26`), that address is the network address. Do not jump to the next subnet.
+
+---
+
+## Mistake 2
+
+Miscounted usable hosts.
+
+### Fix
+
+Never count host addresses manually. Use:
+
+Usable Hosts = 2^(32 − CIDR) − 2
+
+or memorize the common values:
+
+* /26 → 62
+* /27 → 30
+* /28 → 14
+* /29 → 6
+* /30 → 2
+
+---
+
+## Mistake 3
+
+Started subnetting problems with binary.
+
+### Better Approach
+
+CIDR → Block Size → Subnet Boundaries → Network → Broadcast → Hosts
+
+This approach is significantly faster for certification exams and practical networking tasks.
