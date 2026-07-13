@@ -63,3 +63,80 @@
 * Improved confidence interacting with MySQL and FTP services.
 * Reinforced the importance of gathering information before exploitation.
 * Continued building practical penetration testing skills through hands-on Hack The Box labs.
+
+# Responder
+
+## Machine Information
+
+* Platform: Hack The Box
+* Track: Starting Point
+* Tier: 1
+* Completed: 2026-07-12
+
+---
+
+## Objective
+
+Learn how attackers can capture network authentication attempts, crack recovered password hashes, and use valid credentials to gain remote access to a Windows system.
+
+---
+
+## Skills Learned
+
+* Network enumeration
+* Service identification
+* VPN interface verification
+* Authentication hash capture
+* Offline password cracking
+* Remote Windows management
+* Basic Windows post-authentication workflow
+
+---
+
+## Commands Used
+
+### Initial Enumeration
+
+```bash
+nmap -sC -sV --min-rate <target_ip>
+```
+
+### Verify VPN Interface
+
+```bash
+ip a | grep tun0
+```
+
+### Start Responder
+
+```bash
+responder
+```
+
+### Crack Captured Hashes
+
+```bash
+john
+```
+
+### Remote Access
+
+```bash
+evil-winrm
+```
+
+---
+
+## Key Lessons
+
+* Enumeration should always be the first step.
+* Verify your VPN interface before running network attacks.
+* Captured hashes are valuable and should be handled securely.
+* Offline password cracking can reveal valid credentials.
+* WinRM is a common Windows remote management service encountered during penetration tests.
+
+---
+
+## Personal Reflection
+
+This machine introduced a realistic Windows-oriented attack chain that combined reconnaissance, credential capture, password cracking, and remote administration. It reinforced the importance of following a structured methodology rather than rushing toward exploitation.
