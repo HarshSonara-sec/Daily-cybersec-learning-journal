@@ -140,3 +140,123 @@ evil-winrm
 ## Personal Reflection
 
 This machine introduced a realistic Windows-oriented attack chain that combined reconnaissance, credential capture, password cracking, and remote administration. It reinforced the importance of following a structured methodology rather than rushing toward exploitation.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+### Archetype
+
+## Machine Information
+
+* Platform: Hack The Box
+* Track: Starting Point
+* Tier: 1
+* Operating System: Windows
+* Completion Date: 2026-07-13
+
+---
+
+## Objective
+
+Practice Windows-focused enumeration, SMB interaction, credential discovery, and remote administration using common penetration testing tools.
+
+---
+
+## Skills Learned
+
+* SMB enumeration
+* Reading configuration files
+* Discovering exposed credentials
+* File transfer techniques
+* Working with Impacket
+* Remote Windows administration using PsExec
+
+---
+
+## Commands Used
+
+### Initial Enumeration
+
+```bash
+nmap
+```
+
+### SMB Enumeration
+
+```bash
+smbclient
+dir
+get
+more
+```
+
+### Tool Usage
+
+```bash
+impacket
+```
+
+### File Transfer
+
+```bash
+sudo python -m http.server 1337
+```
+
+### File Discovery
+
+```bash
+locate
+```
+
+### Remote Access
+
+```bash
+psexec.py
+```
+
+---
+
+## Attack Chain
+
+Reconnaissance
+
+↓
+
+SMB Enumeration
+
+↓
+
+Configuration File Discovery
+
+↓
+
+Credential Discovery
+
+↓
+
+Remote Access
+
+↓
+
+Privilege Escalation
+
+↓
+
+Flag
+
+---
+
+## Key Lessons
+
+* Enumeration remains the most important phase of an assessment.
+* Configuration files frequently contain valuable information.
+* SMB shares should always be thoroughly investigated.
+* Impacket provides powerful tools for Windows penetration testing.
+* PsExec is commonly used for remote administration when valid credentials are available.
+
+---
+
+## Personal Reflection
+
+Archetype was the most challenging Starting Point machine I have completed so far. I attempted the machine independently before using parts of the walkthrough to understand the remaining steps. The walkthrough helped me understand the attack methodology rather than simply copying commands, making it a valuable learning experience.
+
+Future goal: solve similar Windows machines with progressively less external guidance.
